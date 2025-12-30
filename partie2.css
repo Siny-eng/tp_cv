@@ -1,0 +1,47 @@
+/* 1. Intégration de la police Sensation */
+@font-face {
+  font-family: 'Sensation';
+  src: url('Sansation_Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 2. Bordure sur le container */
+.container {
+  border: 2px solid #0A2C59; 
+}
+
+/* 3. Zones claire et sombre */
+.lightZone {
+  background-color: #DCE4F2;
+  color: #0A2C59;          
+}
+
+.darkZone {
+  background-color: #0A2C59;
+  color:#DCE4F2;            
+}
+
+/* 4. Titres h1 principaux */
+.lightZone h1 {
+  border-bottom: 2px solid #0A2C59;
+  font-size: 38px;
+}
+.darkZone h1 {
+  border-bottom: 2px solid #DCE4F2;
+  font-size: 38px;
+}
+
+/* 5. Titres h1 imbriqués (dans les sections d'expérience/formation) */
+.lightZone section section h1,
+.darkZone section section h1 {
+  border: none;
+  font-size: 20px;
+}
+
+/* 6. Application de Sensation sur le nom */
+header span {
+  font-family: 'Sensation', sans-serif;
+  font-size: 38px;
+}
