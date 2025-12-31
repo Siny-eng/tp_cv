@@ -1,0 +1,25 @@
+ <div class="container">
+    <entete-cv> </entete-cv>
+    
+    <!-- MAIN -->
+    <main class="row">
+      <!-- Section sombre : Contact, Compétences, Langues -->
+      <div id="darkSection" class="col-12 col-lg-3 order-lg-last bg-primary texte-white">
+        <div class="row">
+          <!-- Sur tablette (md) : 3 colonnes égales (4+4+4). Sur desktop : 1 colonne (12). -->
+          <app-contact> </app-contact>
+          <app-competences></app-competences>
+          <app-langues></app-langues>
+        </div>
+      </div>
+
+      <!-- Section claire : Expériences + Formations -->
+      <div id="lightSection" class="col-12 col-lg-9">
+        <app-experiences></app-experiences>
+
+        <app-formations></app-formations>
+      </div>
+    </main>
+  </div>
+
+

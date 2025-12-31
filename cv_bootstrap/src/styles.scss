@@ -1,0 +1,45 @@
+// ===== SURCHARGE DES COULEURS BOOTSTRAP (Partie VI) =====
+$primary: #0A2C59;   // ancien .darkZone
+$secondary: #DCE4F2; // ancien .lightZone
+
+// ===== IMPORT DE BOOTSTRAP =====
+@import "bootstrap/scss/bootstrap";
+
+// ===== TES STYLES COMPLÉMENTAIRES =====
+.container {
+  border: 2px solid $primary;
+}
+
+// Police Sensation
+@font-face {
+  font-family: 'Sensation';
+  src: url('assets/Sansation_Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+header span {
+  font-family: 'Sensation', sans-serif;
+  font-size: 38px;
+}
+
+// Titres dans les zones Bootstrap
+.bg-primary h1 {
+  border-bottom: 2px solid $secondary;
+  font-size: 38px;
+  color: $secondary; // text-white est déjà géré par Bootstrap
+}
+
+.bg-secondary h1 {
+  border-bottom: 2px solid $primary;
+  font-size: 38px;
+  color: $primary;
+}
+
+// Titres imbriqués
+.bg-primary section section h1,
+.bg-secondary section section h1 {
+  border: none;
+  font-size: 20px;
+}
